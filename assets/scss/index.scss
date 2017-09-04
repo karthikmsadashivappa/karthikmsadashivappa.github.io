@@ -1,0 +1,42 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+$text-color: #2D3047;
+$brand-color: #419D78;
+$secondary-color: #E0A458;
+
+body {
+	font-size: 18px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+header {
+	min-height: 650px;
+	background-color: $text-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+
+	h1 {
+		color: $brand-color;
+		font-size: 32px;
+		line-height: 1.5;
+		font-weight: bold;
+	}
+	p {
+		color: white;
+	}
+}
+.container {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+footer {
+	min-height: 70px;
+	background-color: $secondary-color;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
