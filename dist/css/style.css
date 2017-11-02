@@ -44,4 +44,22 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1em;
   font-family: sans-serif; }
 
+.work {
+  background: #454851;
+  padding: 5em 0; }
+  .work .card {
+    background: #ffffff;
+    border-radius: .35em;
+    height: 450px;
+    display: table; }
+  .work .card_full {
+    width: 100%; }
+  .work .card_inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+    padding: 1.5em 12%; }
+  .work .red {
+    background: rgba(255, 102, 102, 0.6); }
+
 /*# sourceMappingURL=style.css.map */
