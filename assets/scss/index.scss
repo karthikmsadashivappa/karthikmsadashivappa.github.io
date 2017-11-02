@@ -1,42 +1,60 @@
-@import "reset";
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+$blue: #71A9F7;
+$red: #FF6666;
+$white: #ffffff;
 
-$text-color: #2D3047;
-$brand-color: #419D78;
-$secondary-color: #E0A458;
+* {
+	box-sizing: border-box;
+}
 
 body {
-	font-size: 18px;
-	font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans', sans-serif;
+-webkit-front-smoothing: antialiased;
 }
 
-header {
-	min-height: 650px;
-	background-color: $text-color;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-
-	h1 {
-		color: $brand-color;
-		font-size: 32px;
-		line-height: 1.5;
-		font-weight: bold;
-	}
-	p {
-		color: white;
-	}
+h1, h2, h3, h4, h5, h6 {
+	font-family: sans-serif;
+	font-weight: 400;
 }
-.container {
-	max-width: 800px;
+
+.cf:before, .cf:after {
+	content: "";
+	display: table;
+}
+
+.cf:after {
+	clear: both;
+}
+
+.wrapper {
+	width: 1000px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
-footer {
-	min-height: 70px;
-	background-color: $secondary-color;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.banner {
+	padding: 5em 0;
+	.logo {
+		float: left;
+	}
+	h1 {
+		color: $blue;
+		text-align: right;
+		font-size: 5em;
+		display: inline;
+		float: right;
+		margin: 0;
+	}
+}
+
+.logo {
+	background: $red;
+	border-radius: 100%;
+	width: 75px;
+	height: 75px;
+	text-align: center;
+	line-height: 75px;
+	color: $white;
+	font-size: 1.1em;
+	font-family: sans-serif;
+
 }

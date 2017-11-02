@@ -1,77 +1,47 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline; }
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+* {
+  box-sizing: border-box; }
 
 body {
-  line-height: 1; }
+  font-family: 'Open Sans', sans-serif;
+  -webkit-front-smoothing: antialiased; }
 
-ol, ul {
-  list-style: none; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: sans-serif;
+  font-weight: 400; }
 
-blockquote, q {
-  quotes: none; }
+.cf:before, .cf:after {
+  content: "";
+  display: table; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none; }
+.cf:after {
+  clear: both; }
 
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-body {
-  font-size: 18px;
-  font-family: 'Open Sans', sans-serif; }
-
-header {
-  min-height: 650px;
-  background-color: #2D3047;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center; }
-  header h1 {
-    color: #419D78;
-    font-size: 32px;
-    line-height: 1.5;
-    font-weight: bold; }
-  header p {
-    color: white; }
-
-.container {
-  max-width: 800px;
+.wrapper {
+  width: 1000px;
+  max-width: 100%;
   margin: 0 auto; }
 
-footer {
-  min-height: 70px;
-  background-color: #E0A458;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
+.banner {
+  padding: 5em 0; }
+  .banner .logo {
+    float: left; }
+  .banner h1 {
+    color: #71A9F7;
+    text-align: right;
+    font-size: 5em;
+    display: inline;
+    float: right;
+    margin: 0; }
+
+.logo {
+  background: #FF6666;
+  border-radius: 100%;
+  width: 75px;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  color: #ffffff;
+  font-size: 1.1em;
+  font-family: sans-serif; }
+
+/*# sourceMappingURL=style.css.map */
