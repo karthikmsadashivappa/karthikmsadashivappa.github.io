@@ -3,17 +3,29 @@ $red: #FF6666;
 $white: #ffffff;
 $grey: #454851;
 
+@mixin bg_img($url, $size, $position){
+	background-image: url($url);
+	background-size: $size;
+	background-position: $position;
+}
+
 * {
 	box-sizing: border-box;
 }
 
 body {
-font-family: 'Open Sans', sans-serif;
+font-family: sans-serif;
 -webkit-front-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	font-family: sans-serif;
+h1, h2 {
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 2px;
+
+}
+
+  h3, h4, h5, h6 {
+ 	font-family: sans-serif;
 	font-weight: 400;
 }
 
@@ -59,6 +71,17 @@ h1, h2, h3, h4, h5, h6 {
 	font-family: sans-serif;
 }
 
+.row {
+	width: 100%;
+	margin-bottom: 2em;
+	&:before, &:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
 
 .work {
 	background: $grey;
@@ -68,18 +91,64 @@ h1, h2, h3, h4, h5, h6 {
 		border-radius: .35em;
 		height: 450px;
 		display: table;
+		background-repeat: no-repeat;
 	}
 	.card_full {
 		width: 100%;
+	}
+	.card_half {
+		width: 48.5%;
+		float: left;
+	}
+	.left {
+		margin-right: 1.5%;
+	}
+	.right {
+		margin-left: 1.5%;
+	}
+	.tall {
+		height: 600px;
+	}
+	.card_1{
+		@include bg_img('../../assets/images/card1.jpg', 80%, 200px 88px);
+	}
+	.card_2{
+		@include bg_img('../../assets/images/card3.png', 95%, -25px 72px);
+	}
+	.card_3{
+		@include bg_img('../../assets/images/card2.png', 80%, 200px 88px);
 	}
 	.card_inner {
 		display: table-cell;
 		vertical-align: middle;
 		height: 100%;
 		padding: 1.5em 12%;
+		color: $white;
+		p {
+			font-size: 1em;
+			text-transform: uppercase;
+			font-weight: 700;
+		}
+		h2 {
+			font-size: 4em;
+			margin: 0;
+		}
 	}
+	.red, .blue, .yellow, .green {
+			border-radius: .35em;
+	}
+
 	.red {
 	background: rgba(255, 102, 102, .6);
+	}
+	.blue {
+		background: rgba(113,169,247, .6);
+	}
+	.yellow {
+		background: rgba(255, 166, 0, .6);
+	}
+	.green {
+		background: rgba(35, 209, 96, .6);
 	}
 }
 

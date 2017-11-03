@@ -2,10 +2,14 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: sans-serif;
   -webkit-front-smoothing: antialiased; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 2px; }
+
+h3, h4, h5, h6 {
   font-family: sans-serif;
   font-weight: 400; }
 
@@ -44,6 +48,15 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1em;
   font-family: sans-serif; }
 
+.row {
+  width: 100%;
+  margin-bottom: 2em; }
+  .row:before, .row:after {
+    content: "";
+    display: table; }
+  .row:after {
+    clear: both; }
+
 .work {
   background: #454851;
   padding: 5em 0; }
@@ -51,15 +64,53 @@ h1, h2, h3, h4, h5, h6 {
     background: #ffffff;
     border-radius: .35em;
     height: 450px;
-    display: table; }
+    display: table;
+    background-repeat: no-repeat; }
   .work .card_full {
     width: 100%; }
+  .work .card_half {
+    width: 48.5%;
+    float: left; }
+  .work .left {
+    margin-right: 1.5%; }
+  .work .right {
+    margin-left: 1.5%; }
+  .work .tall {
+    height: 600px; }
+  .work .card_1 {
+    background-image: url("../../assets/images/card1.jpg");
+    background-size: 80%;
+    background-position: 200px 88px; }
+  .work .card_2 {
+    background-image: url("../../assets/images/card3.png");
+    background-size: 95%;
+    background-position: -25px 72px; }
+  .work .card_3 {
+    background-image: url("../../assets/images/card2.png");
+    background-size: 80%;
+    background-position: 200px 88px; }
   .work .card_inner {
     display: table-cell;
     vertical-align: middle;
     height: 100%;
-    padding: 1.5em 12%; }
+    padding: 1.5em 12%;
+    color: #ffffff; }
+    .work .card_inner p {
+      font-size: 1em;
+      text-transform: uppercase;
+      font-weight: 700; }
+    .work .card_inner h2 {
+      font-size: 4em;
+      margin: 0; }
+  .work .red, .work .blue, .work .yellow, .work .green {
+    border-radius: .35em; }
   .work .red {
     background: rgba(255, 102, 102, 0.6); }
+  .work .blue {
+    background: rgba(113, 169, 247, 0.6); }
+  .work .yellow {
+    background: rgba(255, 166, 0, 0.6); }
+  .work .green {
+    background: rgba(35, 209, 96, 0.6); }
 
 /*# sourceMappingURL=style.css.map */
