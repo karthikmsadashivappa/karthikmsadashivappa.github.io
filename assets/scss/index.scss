@@ -100,6 +100,10 @@ h1, h2 {
 		width: 48.5%;
 		float: left;
 	}
+	.card_third {
+		width: 75%;
+		float: left;
+	}
 	.left {
 		margin-right: 1.5%;
 	}
@@ -113,10 +117,13 @@ h1, h2 {
 		@include bg_img('../../assets/images/card1.jpg', 80%, 200px 88px);
 	}
 	.card_2{
-		@include bg_img('../../assets/images/card3.png', 95%, -25px 72px);
+		@include bg_img('../../assets/images/card5.png', 101%, -62px 228px);
 	}
 	.card_3{
-		@include bg_img('../../assets/images/card2.png', 80%, 200px 88px);
+		@include bg_img('../../assets/images/card2.png', 80%, 177px 17px);
+	}
+	.card_4{
+		@include bg_img('../../assets/images/card4.png', 60%, 400px 88px);
 	}
 	.card_inner {
 		display: table-cell;
@@ -150,5 +157,62 @@ h1, h2 {
 	.green {
 		background: rgba(35, 209, 96, .6);
 	}
+	.view_more {
+		width: 25%;
+		float: left;
+		height: 400px;
+		padding-left: 3.5em;
+		p {
+			font-size: 1.25em;
+			font-weight: 700;
+			line-height: 450px;
+			margin: 0;
+			color: #D2CEDD;
+		}
+		a {
+			text-decoration: none;
+			&:hover {
+				p {
+					color: $red;
+				}
+			}
+		}
+	}
 }
 
+
+footer {
+	padding: 3em 0;
+	.logo {
+		float: left;
+		margin: 0;
+	}
+	ul {
+		list-style: none;
+		margin: 0;
+		padding-top: 1em;
+		li {
+			display: inline;
+			float: left;
+			margin-left: 4em;
+			.title {
+				text-transform: uppercase;
+				font-weight: 700;
+				font-size: .75em;
+				display: block;
+				padding-bottom: .5em;
+			}
+			.links {
+				font-size: 1.75em;
+				a {
+					color: $grey;
+					text-decoration: none;
+					padding-right: 20px;
+					&:hover {
+						color: $red;
+					}
+				}
+			}
+		}
+	}
+}

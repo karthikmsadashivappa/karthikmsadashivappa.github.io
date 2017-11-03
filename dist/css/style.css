@@ -71,6 +71,9 @@ h3, h4, h5, h6 {
   .work .card_half {
     width: 48.5%;
     float: left; }
+  .work .card_third {
+    width: 75%;
+    float: left; }
   .work .left {
     margin-right: 1.5%; }
   .work .right {
@@ -82,13 +85,17 @@ h3, h4, h5, h6 {
     background-size: 80%;
     background-position: 200px 88px; }
   .work .card_2 {
-    background-image: url("../../assets/images/card3.png");
-    background-size: 95%;
-    background-position: -25px 72px; }
+    background-image: url("../../assets/images/card5.png");
+    background-size: 101%;
+    background-position: -62px 228px; }
   .work .card_3 {
     background-image: url("../../assets/images/card2.png");
     background-size: 80%;
-    background-position: 200px 88px; }
+    background-position: 177px 17px; }
+  .work .card_4 {
+    background-image: url("../../assets/images/card4.png");
+    background-size: 60%;
+    background-position: 400px 88px; }
   .work .card_inner {
     display: table-cell;
     vertical-align: middle;
@@ -112,5 +119,48 @@ h3, h4, h5, h6 {
     background: rgba(255, 166, 0, 0.6); }
   .work .green {
     background: rgba(35, 209, 96, 0.6); }
+  .work .view_more {
+    width: 25%;
+    float: left;
+    height: 400px;
+    padding-left: 3.5em; }
+    .work .view_more p {
+      font-size: 1.25em;
+      font-weight: 700;
+      line-height: 450px;
+      margin: 0;
+      color: #D2CEDD; }
+    .work .view_more a {
+      text-decoration: none; }
+      .work .view_more a:hover p {
+        color: #FF6666; }
+
+footer {
+  padding: 3em 0; }
+  footer .logo {
+    float: left;
+    margin: 0; }
+  footer ul {
+    list-style: none;
+    margin: 0;
+    padding-top: 1em; }
+    footer ul li {
+      display: inline;
+      float: left;
+      margin-left: 4em; }
+      footer ul li .title {
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: .75em;
+        display: block;
+        padding-bottom: .5em; }
+      footer ul li .links {
+        font-size: 1.75em; }
+        footer ul li .links a {
+          color: #454851;
+          text-decoration: none;
+          padding-right: 20px; }
+          footer ul li .links a:hover {
+            color: #FF6666; }
 
 /*# sourceMappingURL=style.css.map */
