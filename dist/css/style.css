@@ -37,16 +37,10 @@ h3, h4, h5, h6 {
     float: right;
     margin: 0; }
 
-.logo {
-  background: #FF6666;
-  border-radius: 100%;
-  width: 75px;
-  height: 75px;
-  text-align: center;
-  line-height: 75px;
-  color: #ffffff;
-  font-size: 1.1em;
-  font-family: sans-serif; }
+.logo img {
+  width: 200px;
+  height: 200px;
+  margin: -40px 0 0 -65px; }
 
 .row {
   width: 100%;
@@ -166,6 +160,10 @@ footer {
 @media only screen and (max-width: 768px) {
   .banner {
     padding: 4em 2em; }
+    .banner .logo img {
+      width: 130px;
+      height: 130px;
+      margin: -40px 0 0 20px; }
     .banner h1 {
       font-size: 3em; }
 
@@ -201,10 +199,18 @@ footer {
         line-height: 340px; }
 
   footer .wrapper {
-    padding: 0 2em; } }
+    padding: 0 2em; }
+    footer .wrapper .logo img {
+      width: 130px;
+      height: 130px;
+      margin: -15px 0 0 0px; } }
 @media only screen and (max-width: 480px) {
   .banner {
     padding: 2em 1em; }
+    .banner .logo img {
+      width: 90px;
+      height: 90px;
+      margin: -32px 0 0 0px; }
     .banner h1 {
       font-size: 2em; }
 
@@ -243,11 +249,10 @@ footer {
 
   footer {
     padding: 1em 0; }
-    footer .logo {
-      width: 50px;
-      height: 50px;
-      font-size: 0.7em;
-      line-height: 50px; }
+    footer .logo img {
+      width: 90px;
+      height: 90px;
+      margin: -17px 0 0 0px; }
     footer ul {
       padding-top: .6em; }
       footer ul li {
