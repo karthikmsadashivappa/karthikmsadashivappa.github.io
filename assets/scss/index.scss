@@ -276,52 +276,62 @@ footer {
 		@include bg_img('../../assets/images/card1.jpg', 104%, 83px 75px);
 	}
 		.card_2{
-		@include bg_img('../../assets/images/card5.png', 75%, -29px 107px);
+		@include bg_img('../../assets/images/card5.png', 75%, -17px 129px);
 	}
 		.card_3{
 		@include bg_img('../../assets/images/card2.png', 70%, 161px 17px);
 			}
 		.card_4{
-		@include bg_img('../../assets/images/card4.png', 60%, 162px 136px);
+		@include bg_img('../../assets/images/card4.png', 67%, 121px 136px);
 	}
 				.row {
 		padding: 0 2em;
 		.card {
-			height: 289px;
+			height: 268px;
 			p {
 				font-size: .8em;
 			}
 			h2 {
-				font-size: 1.9em;
+				font-size: 1.5em;
 			}
 		}
 	}
 		.left {
-			margin: 0px 3em;
+			margin: 0px 2em;
 			}
 			.right {
-			margin: 2em 3em;
+			margin: 2em 2em 0 2em;
 		}
 			.card_half {
     			width: 79.5%;
 		}
 			.view_more {
-				font-size: 0.45em;
+				font-size: 0.35em;
 			}
 			
 	}
 
 	footer {
+		padding: 1em 0;
+		.logo {
+	 width: 50px;
+     height: 50px;
+     font-size: 0.7em;
+     line-height: 50px;
+		}
 		ul {
-			li {
+			padding-top: .6em;
+			li { 
+				margin-left: 2em;
 				.title{
-			   font-size: 0.55em;
+			   font-size: 0.45em;
 
 				}
 				.links {
-			    font-size: 0.65em;
+			    font-size: 0.5em;
 			}
 		}
+
 		
 		}
 	}
