@@ -163,4 +163,49 @@ footer {
           footer ul li .links a:hover {
             color: #FF6666; }
 
+@media only screen and (max-width: 768px) {
+  .banner {
+    padding: 4em 2em; }
+    .banner h1 {
+      font-size: 3em; }
+
+  .work {
+    padding-bottom: 0px; }
+    .work .card_1 {
+      background-image: url("../../assets/images/card1.jpg");
+      background-size: 86%;
+      background-position: 134px 75px; }
+    .work .card_2 {
+      background-image: url("../../assets/images/card5.png");
+      background-size: 100%;
+      background-position: -30px 122px; }
+    .work .card_3 {
+      background-image: url("../../assets/images/card2.png");
+      background-size: 80%;
+      background-position: 127px 17px; }
+    .work .card_4 {
+      background-image: url("../../assets/images/card4.png");
+      background-size: 60%;
+      background-position: 275px 100px; }
+    .work .row {
+      padding: 0 2em; }
+      .work .row .card {
+        height: 350px; }
+        .work .row .card p {
+          font-size: .7em; }
+        .work .row .card h2 {
+          font-size: 3em; }
+    .work .view_more {
+      font-size: 0.75em; }
+      .work .view_more p {
+        line-height: 340px; }
+
+  footer .wrapper {
+    padding: 0 2em; } }
+@media only screen and (max-width: 480px) {
+  .banner {
+    padding: 2em 1em; }
+    .banner h1 {
+      font-size: 2em; } }
+
 /*# sourceMappingURL=style.css.map */
