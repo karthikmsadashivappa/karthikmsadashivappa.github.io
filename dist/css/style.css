@@ -287,3 +287,37 @@ footer {
   background-color: #eee;
   border: 1px solid #ddd;
   border-radius: 4px; }
+
+/*----------------------Resume---------------------*/
+.resume {
+  display: flex;
+  align-items: center;
+  clear: both;
+}
+
+.button {
+  padding: 14px;
+  border: 1px solid #919392;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #919392;
+}
+
+.button:hover {
+  color: #FF6666;
+  border: 1px solid #FF6666;
+}
+
+.download {
+  margin-right: 20px;
+}
+
+@media only screen and (max-width: 480px) {
+  .resume {
+      padding-top: 30px;
+  }
+  .button {
+    padding: 8px;
+    font-size: 12px;
+  }
+}
